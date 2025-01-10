@@ -1,0 +1,101 @@
+/* Video background */
+.hero-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero-container video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Hero content */
+.hero-content {
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-content .headline {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content .subheadline {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: #f0f0f0;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.hero-btns .btn {
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.hero-btns .btn-primary {
+  background-color: #4b59f7;
+  color: #fff;
+}
+
+.hero-btns .btn-primary:hover {
+  background-color: #657ef8;
+}
+
+.hero-btns .btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.hero-btns .btn-outline:hover {
+  background: #fff;
+  color: #4b59f7;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .hero-content .headline {
+    font-size: 2.5rem;
+  }
+
+  .hero-content .subheadline {
+    font-size: 1.2rem;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
