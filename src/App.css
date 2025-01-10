@@ -26,7 +26,7 @@
   color: #fff;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("D:\Porto_Web\react-website-porto\public\images\img-home.jpg")
+    url("public\images\img-home.jpg")
       center/cover no-repeat;
 }
 
